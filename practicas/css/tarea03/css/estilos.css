@@ -1,0 +1,32 @@
+#capa {
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#imagen {
+    position: relative;
+    left: 160px;
+}
+
+@media only screen and (max-width: 2000px) and (min-width: 1500px)
+{
+    div {
+        border: 3px solid gold;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 600px)
+{
+    div {
+        background-color: aqua;
+    }
+}
+
+@media only screen and (max-width: 750) and (min-width: 300px)
+{
+    div {
+        position: relative;
+        float: left;
+    }
+}

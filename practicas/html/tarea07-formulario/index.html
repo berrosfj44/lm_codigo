@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing shop</title>
+    
+    <meta name="description" content="Tu tienda de ropa por excelencia, todo tipos de gustos de ropa para el consumidor">
+    <meta name="keywords" content="ropa, pantalones, camisetas, zapatas, clothes, T-shirt, trousers, shoes">
+    <meta name="robots" content="Index, Follow"> 
+    <meta http-equiv="Refresh" content="3600">
+    <meta name="Language" content="ES">
+    <meta name="copytight" content="berrosfj">
+    <meta name="author" content="berrosfj">
+    <meta name="revised" content="sun, 14 Nov 2021 18:07:30 GMT">
+    <meta name="summary" content="Tienda de ropa especializada en ropa de hombre para los jóvenes vendiendo todo tipo de complementos y estilos de ropa para el consumidor con un precio proporcionado para la audencia que se quiere llamar">
+    
+    <style>
+        td, caption {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    </style>
+</head>
+<body>
+    <div style="width: 600px; height: 600px; background-color: lightgray;">
+    <form action="registro.php" method="get">
+        <br>
+    <table>
+       <caption>Solicitud de trabajo</caption> 
+        <td><label for="nombre">Nombre y apellidos:</label></td>
+       <td><input type="text" name="nombre" id="nombre" placeholder="Nombre" required></td> 
+
+      <tr>
+        <td><label for="edad">Edad</label></td>
+        <td><input type="number" name="edad" id="edad" maxlength="5" max="100" min="16" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="direccion">Dirección:</label></td>
+        <td><input type="text" name="direccion" id="direccion" placeholder="calle, portal nº, nº"></td> 
+      </tr>
+      <td><label for="ciudad">Ciudad:</label></td>
+                <td><select name="ciudad" id="ciudad" required>
+
+                    <optgroup label="Andalucía"> 
+                        <option value="21">Huelva</option>
+                        <option value="41">Sevilla</option>
+                        <option value="11">Cádiz</option>
+                        <option value="29">Málaga</option>
+                        <option value="14">Córdoba</option>
+                        <option value="23">Jaén</option>
+                        <option value="18">Granada</option>
+                        <option value="04">Almería</option>
+                    </optgroup>
+
+                    <optgroup label="Madrid"> 
+                        <option value="28" selected>Madrid</option>
+                    </optgroup>
+
+                    <optgroup label="Castilla la Mancha"> 
+                        <option value="02">Albacete</option>
+                        <option value="13">Ciudad Real</option>
+                        <option value="45">Toledo</option>
+                        <option value="16">Cuenca</option>
+                        <option value="19">Guadalajara</option>
+                    </optgroup>
+
+                    <optgroup label="Extremadura"> 
+                        <option value="10">Cáceres</option>
+                        <option value="06">Badajoz</option>
+                    </optgroup>
+
+                    <optgroup label="Castilla y León"> 
+                        <option value="24">León</option>
+                        <option value="49">Zamora</option>
+                        <option value="27">Salamanca</option>
+                        <option value="05">Ávila</option>
+                        <option value="47">Valladolid</option>
+                        <option value="40">Segovia</option>
+                        <option value="42">Soria</option>
+                        <option value="09">Burgos</option>
+                        <option value="34">Palencia</option>
+                    </optgroup>
+
+                    <optgroup label="Galicia"> 
+                        <option value="15">A coruña</option>
+                        <option value="36">Pontevedra</option>
+                        <option value="32">Ourense</option>
+                        <option value="27">Lugo</option>
+                    </optgroup>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="tel">Teléfono:</label></td>
+                <td><input type="tel" name="telefono" id="telefono" placeholder="+32-*********"></td>
+            </tr>
+            <tr>
+               <td><label for="prengunta">¿He trabajado antes?</label></td>
+                <td><input type="radio" name="pregunta" id="pregunta" 
+                    value="Si" checked><span>Si</span>
+
+                <input type="radio" name="pregunta" id="pregunta" 
+                    value="No"> <span>No</span>
+               </td> 
+            </tr>
+            <tr>
+                <td><label for="fecha">Duración del trabajo anterio:</label></td>
+            </tr>
+                <tr>
+                    <td><span>Comienzo:</span></td>
+                     <td><span>Final:</span></td>
+                </tr>
+                <tr>
+                    <td><input type="date" name="fehca1" id="fecha1"></td> 
+                    <td><input type="date" name="fehca2" id="fecha2"></td>
+                </tr>
+            <tr>
+                <td><label for="redes">Redes sociales:</label></td>
+                <td>
+                    <input type="checkbox" name="twitter" id="twitter" value="A"><span>Twitter</span>
+                    <input type="checkbox" name="facebook" id="facebook" value="B"><span>Facebook</span>
+                    <input type="checkbox" name="instagram" id="instagram" value="C"><span>Instragram</span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="descripcion">Descripcion propia del puesto:</label></td>
+                <td> 
+                    <textarea name="descripcion" id="descripcion" rows="5" cols="50" maxlength="1000"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+            </tr> 
+            <tr>
+                <td><input type="reset" value="Borrar"> </td>
+            </tr>
+    </table>
+</form>
+</div>
+</body>
+</html>

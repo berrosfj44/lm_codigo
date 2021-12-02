@@ -1,0 +1,21 @@
+a {
+    color: red;
+}
+
+#primero p {
+    color: #45538F;
+}
+
+#primero em {
+    color: #0F12BB;
+    background-color: #FEFECC;
+}
+
+.especial  {
+    background-color: black;
+    color: yellow;
+}
+
+#segundo span {
+    font-weight: bold;
+}
