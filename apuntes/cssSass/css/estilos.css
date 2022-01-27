@@ -1,0 +1,31 @@
+/* 
+comentario css
+*/
+/* line 11, ../repositorio/lm_codigo/apuntes/cssSass/sass/estilos.scss */
+body {
+  background-color: #c0c0c0;
+  color: #51527F;
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 18, ../repositorio/lm_codigo/apuntes/cssSass/sass/estilos.scss */
+.clase-1 {
+  color: #555555;
+}
+
+/* line 18, ../repositorio/lm_codigo/apuntes/cssSass/sass/estilos.scss */
+.clase-2 {
+  color: #aaaaaa;
+}
+
+/* line 18, ../repositorio/lm_codigo/apuntes/cssSass/sass/estilos.scss */
+.clase-3 {
+  color: white;
+}
+
+/* line 34, ../repositorio/lm_codigo/apuntes/cssSass/sass/estilos.scss */
+.info {
+  display: none;
+}
+
+/*# sourceMappingURL=estilos.css.map */

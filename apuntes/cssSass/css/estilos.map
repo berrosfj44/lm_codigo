@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "estilos.css",
+	"sources": [
+		"../sass/estilos.scss"
+	],
+	"sourcesContent": [
+		"/* \ncomentario css\n*/\n\n// comentario de una linea de html, no aparece en css\n\n$primary-color: #c0c0c0;\n$secondary-color: #51527F;\n$body-font: 'Roboto', sans-serif;\n\nbody {\n    background-color: $primary-color;\n    color: $secondary-color;\n    font-family: $body-font;\n}\n\n@for $c from 1 to 4 {\n    .clase-#{$c} {\n        color: rgb($c*255/3, $c*255/3, $c*255/3);\n    }\n}\n\n$debug: false !default;\n\n@mixin  debugmode {\n    @if $debug {\n        display: inline-block;\n    }\n    @else {\n        display: none;\n    }\n}\n\n.info {\n    @include debugmode;\n}\n\n"
+	],
+	"names": [],
+	"mappings": "AAAA;;EAEE;;AAQF,AAAA,IAAI,CAAC;EACD,gBAAgB,EALJ,OAAO;EAMnB,KAAK,EALS,OAAO;EAMrB,WAAW,EALH,QAAQ,EAAE,UAAU;CAM/B;;;AAGG,AAAA,QAAQ,CAAK;EACT,KAAK,EAAE,OAAiC;CAC3C;;;AAFD,AAAA,QAAQ,CAAK;EACT,KAAK,EAAE,OAAiC;CAC3C;;;AAFD,AAAA,QAAQ,CAAK;EACT,KAAK,EAAE,KAAiC;CAC3C;;;AAcL,AAAA,KAAK,CAAC;EAJE,OAAO,EAAE,IAAI;CAMpB"
+}

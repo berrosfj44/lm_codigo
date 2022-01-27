@@ -1,0 +1,27 @@
+$fondo: #cccccc;
+$titulo: #e63b1f;
+$blanco: #eeeeee;
+$negro: #010101;
+
+
+body{
+  background-color: $fondo;
+  color: $titulo;
+}
+
+nav{
+  ul{
+    color: $blanco;
+    padding: 0;
+  }
+
+  a{
+    padding: 2px 16px;
+    text-decoration: none;
+    color: $negro;
+  }
+  
+   li{
+    display: inline-block;
+  }
+}
