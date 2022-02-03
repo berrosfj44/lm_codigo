@@ -23,6 +23,19 @@ class ventana:
         if nestado=="cerrada":
             self.estado="cerrada"
 
+    def __add__(self,vetana):
+        an=self.ancho+vetana.ancho
+        al=self.alto+vetana.alto
+        c=self.color
+        return ventana(an,al,c)
+    
+    def __gt__(self,ventana2):
+        if(self.ancho>ventana2.ancho):
+            if(self.alto>ventana2.alto):
+                return True
+
+        return False
+
 a=ventana(1000,2000,"blanca")
 a.mostrar()
 a.abrir()
@@ -31,4 +44,10 @@ a.cerrar()
 a.mostrar()
 b=ventana(200,200,"negro")
 b.mostrar()
-
+c=a+b
+if (c>a):
+    print("c es mayor que a")
+if (b>c):
+    print("b es mayor que c")
+else:
+    print("c es mayor que b")
