@@ -6,25 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
-    <script type="text/javascript" src="js/funciones.js">
-    
-    </script>
+    <script type="text/javascript" src="js/funciones.js"></script>
 </head>
 <body>
-    <span id="texto">
-
+    <span id="texto" onmouseover="ocultar()" onmouseout="mostrar()">
     </span>
     <button id="boton" onclick="mostrarmensaje()">Pulsar</button>
     <div id="principal">
         <p class="clase">Parrafo 1</p>
         <p class="clase">Parrafo 2</p>
         <p class="clase">Parrafo 3</p>
-
     </div>   
     <form>
         <label for="usuario">Usuario</label>
-        <input type="text" name="usuario" id="usuario" value="Este es el usuairo" checked/>Valor 1
-        <input type="radio" name="valores" id="valores" value="v1"/>Valor2
+        <input type="text" name="usuario" id="usuario" value="Este es el usuairo" checked/>
+        <input type="radio" name="valores" id="valores" value="v1"/>Valor 1
+        <input type="radio" name="valores" id="valores" value="v2"/>Valor2
 
     </form>
 </body>
