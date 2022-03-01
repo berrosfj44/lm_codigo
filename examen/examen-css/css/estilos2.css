@@ -1,0 +1,12 @@
+.contenedor {
+    display: flex;
+
+}
+
+.elemento {
+    width: 20%;
+    border: 1px solid black;
+    height: 900px;
+    color: white;
+    flex: 1 1 0;
+}

@@ -1,0 +1,17 @@
+h1,h2,h3 {
+    color: blue;
+}
+
+span#textoconfondo {
+    color: yellow;
+    background-color: blue;
+}
+
+#container span {
+    border: 2px solid green;
+}
+
+#segundo:hover{
+    display: none;
+}
+
