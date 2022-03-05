@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/funciones.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <input type="text" name="numero1" id="numero1" autofocus>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="numero2" id="numero2" autofocus>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="sumar" onclick="sumar()">
+                <input type="button" value="restar" onclick="restar()">
+                <input type="button" value="multiplicar" onclick="multiplicar()">
+                <input type="button" value="dividir" onclick="dividir()">
+            </td>
+        </tr>
+    </table>
+    <div>
+        <br>
+        <span id="res"></span>
+    </div>
+</body>
+</html>
