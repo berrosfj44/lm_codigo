@@ -5,5 +5,5 @@ function calcular () {
 
     calculo = kilometro * precio;
     document.getElementById("res").innerHTML = precio;
-    document.getElementById("res").innerHTML = "El viaje de " + viaje + " de " + kilometro  + " kilometro a " +  precio + " el precio del kilómetro hace un gasto total de " + calculo;
+    document.getElementById("res").innerHTML = "<br/>" + "El viaje de " + viaje + " de " + kilometro  + " kilometro a " +  precio + " el precio del kilómetro hace un gasto total de " + calculo;
 }
