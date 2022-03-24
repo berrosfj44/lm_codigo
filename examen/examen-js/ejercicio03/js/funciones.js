@@ -1,9 +1,9 @@
 function calcular () {
     var viaje = document.getElementById("viaje").value;
-    var kilometro = parseInt(document.getElementById("kilometros").value);
-    var precio = parseInt(document.getElementById("gasolina").value);
+    var kilometro = document.getElementById("kilometros").value;
+    var precio = document.getElementById("gasolina").value;
 
     calculo = kilometro * precio;
-
-    document.getElementById("res").innerHTML = "El viaje de " + viaje + kilometro + calculo;
+    document.getElementById("res").innerHTML = precio;
+    document.getElementById("res").innerHTML = "El viaje de " + viaje + " de " + kilometro  + " kilometro a " +  precio + " el precio del kilómetro hace un gasto total de " + calculo;
 }
