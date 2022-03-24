@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            //selección por identificador
+            $("#dos").css("border", "1px solid black");
+
+            //Selección por nombre de etiqueta
+            $("div").css("background", "blue");
+
+            //Selección por clase
+            //$(".uno").css("background", "green");
+
+            //Seleccionar por todos los elementos
+            $("*").css("color", "gray")
+
+            //Seleccionar algunos elementos
+            $("div,p.uno").css("font-style", "italic");
+
+            //Seleccionar todos los elementos dentro del div "box"
+            $("#box *").css("color", "yellow");
+
+            //Seleccionar todos los hijos directos del div box
+            $("#box > *").css("color", "red");
+
+            //vamos a seleccionar todos los hermanos de un elemento
+            $("li.uno ~ li").css("border", "1px solid black");
+
+            //seleccionar el hermano inmediatamente siguiente
+            $("li.tres + li").css("background", "red");
+
+            //Seleccionar la primera fila de la tabla
+            $("td:last").css("background", "red");
+            //tr:last
+
+            //Seleccionar las filas pares e impares
+            $("tr:even").css("background", "lightblue");
+            $("tr:odd").css("background", "lightgreen");
+
+            //Seleccionar una fila de la tabla
+            $("tr:eq(1)").css("background", "red");
+
+            //Seleccionar el resto de fila
+            $("tr:gt(0)").css("background", "yellow");
+
+            //Seleccionar las filas anteriores
+            $("tr:lt(2)").css("background", "purple");
+            
+            //Seleccionar con condiciones
+            $("tr:not(:first,:last)").css("background", "black");
+
+            //Seleccionar el primer enlace del párrafo$("p:parent").css("background", "gray");
+            $("p a:last-child").css("font-weight", "bold");
+
+            //Seleccionar un enlace del parrafo
+            $("p a:nth-child(2)").css("text-decoration", "none");
+            $("p a:nth-child(2)").append("<span>444</span>");
+
+            //Seleccionar párrafos por contenido algo
+            $("p:contains(ca)").css("background", "blue");$("p:parent").css("background", "gray");
+
+            //Seleccionar los párrafos vacios
+            $("p:empty").css("background", "green");
+
+            //Seleccionar los párrafos que tengan hijos
+            //$("p:parent").css("background", "gray");
+
+            //Seleccionar los párrafos que tienen algún enlace
+            $("p:has(a)").css("background", "yellow");
+
+            // Seleccionar todos los parrafos invisibles
+            $("p:visible").css("background", "red");
+
+            $("button").click(function () {
+                $("p:hidden").css("background", "pink").show();
+            })
+        });
+    </script>
+    <style>
+        p {
+            width: 200px;
+            padding: 3px;
+        }
+        table{
+            width: 200px;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!--<p class="uno">Párrafo 1</p>
+    <p id="dos">Párrafo 2</p>-->
+    <p>Párrafo 3</p>
+    <div id="box">
+        <p>Título <span>Subtitulo</span></p>
+        <div>texto</div>
+        <span>Pie</span>
+    </div>
+    <div>Capa 1</div>
+    <ul>
+        <li class="uno">Item 1</li>
+        <li class="dos">Item 1</li>
+        <li class="tres">Item 1</li>
+        <li class="cuatro">Item 1</li>
+        <li class="cinco">Item 1</li>
+    </ul>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+    </table>
+
+    <p>
+        <a href="#">Enlace 1</a>
+        <a href="#">Enlace 2</a>
+        <a href="#">Enlace 3</a>
+        <a href="#">Enlace 4</a>
+        <a href="#">Enlace 5</a>
+    </p>
+
+    <button> Ver párrafo invisibles</button>
+    <p>Informática</p>
+    <p>Electrónica</p>
+    <p>Administración</p>
+    <p></p>
+    <p>Enlace <a href="#">Ir a .....</a></p>
+    <p style="display:none">Párrafo invisible</p>
+</body>
+
+</html>
